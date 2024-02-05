@@ -1,0 +1,659 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header Section */
+.navbar {
+    color: black;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bolder;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 500;
+    width: 10%;
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.other {
+    font-size: 18px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box:hover {
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.search-container {
+    float: right;
+}
+  
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid gray;
+    width: 200px;
+    box-sizing: border-box;
+}
+  
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.search-container button:hover {
+    opacity: 0.8;
+}
+  
+.search-container .fa {
+    padding: 0 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* HERO SECTION */
+
+.hero-main {
+    padding-top: 100px;
+    height: 700px;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-text {
+    padding-bottom: 25px;
+    color: white;
+    padding-top: 400px; /* Adjust this value to position the text appropriately */
+    text-align: center;
+}
+h1 {
+    font-size: 70px;
+    padding-bottom: 25px;
+}
+.butt-two {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    height: 60px;
+    background-color: #481718;
+    border-radius: 20px;
+    width: 230px;
+    border: none;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+.butt-two:hover {
+    border: 1px solid white;
+    background: none;
+    transition: all;
+    font-size: 35px;
+    font-weight: bold;
+}
+.message {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    font-size: 60px;
+    color: black;
+}
+.message:hover {
+    cursor: pointer;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+/* SECOND SECTION */
+.sec-opt {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: row;
+}
+.pic-onee {
+    height: 950px;
+    width: 50%;
+    background-image: url(web2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic-twoo {
+    height: 950px;
+    width: 50%;
+    background-image: url(sneak2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+.butt-three {
+    background: none;
+    font-size: 30px;
+    font-weight: 200;
+    border: 2px solid white;
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+.butt-three:hover {
+    background-color: black;
+    color: #fff;
+    font-size: 35px;
+}
+
+/* THIRD SECTION */
+
+/* Add your existing styles above this line */
+.gallery {
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.dukh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 35px;
+}
+
+.pic {
+    width: 20%;
+    height: 600px;
+    background-color: #fefae0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pic h2 {
+    margin: 0;
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+.pic:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+
+.container {
+	display: flex;
+    flex-direction: column;
+}
+
+.header {
+	background-color: #333;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header h1 {
+	color: #fff;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+	height: calc(100% - 100px);
+    padding-bottom: 100px;
+}
+
+.stay-in-the-know, .about-us, .the-playbook, .customer-service, .legal {
+	flex-basis: 20%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.stay-in-the-know form {
+	margin-top: 20px;
+}
+
+.stay-in-the-know input[type="email"], .stay-in-the-know button[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+
+
+
+/* Media Queries */
+
+/* Small screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: auto;
+    }
+
+    .logo {
+        width: 60%;
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+
+    .other {
+        display: none;
+
+    }
+    .iii {
+        font-size: 30px;
+    }
+    .iii:hover {
+        cursor: pointer;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+
+    .search-container {
+        display: none;
+    }
+
+    .search-container input[type=text] {
+        width: 100%;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .hero-main {
+        padding-top: 50px;
+        height: 500px;
+    }
+
+    .hero-text {
+        padding-top: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .butt-two {
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+        margin-top: 15px;
+    }
+    .butt-two:hover {
+        border: 1px solid white;
+        background: none;
+        transition: all;
+        font-size: 25px;
+        width: 180px;
+        font-weight: bold;
+    }
+    
+
+    .message {
+        font-size: 40px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .sec-opt {
+        flex-direction: column;
+    }
+
+    .pic-onee, .pic-twoo {
+        width: 100%;
+        height: 500px;
+    }
+
+    .text {
+        margin-top: 300px;
+    }
+
+    .butt-three {
+        font-size: 20px;
+        height: 30px;
+        width: 150px;
+    }
+    .butt-three:hover {
+        background-color: black;
+        color: #fff;
+        font-size: 24px;
+    }
+    
+
+    .gallery {
+        height: auto;
+    }
+
+    .dukh {
+        flex-direction: column;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .dukh h2{
+        text-align: center;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    .pic {
+        width: 100%;
+        height: 500px;
+        margin: 10px 0;
+    }
+
+    .pic h2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .main-content {
+        height: auto;
+    }
+
+    .stay-in-the-know, .about-us, .the-playbook, .customer-service, .legal {
+        flex-basis: 100%; /* Example style adjustment */
+    }
+
+    .about-us, .the-playbook, .customer-service{
+        flex-direction: row;
+    }
+
+    .stay-in-the-know input[type="email"], .stay-in-the-know button[type="submit"] {
+        width: 100%; /* Example style adjustment */
+    }
+}
+
+
+
+/* Medium screens (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 35px;
+        width: 20%;
+    }
+    .iii {
+        font-size: 30px;
+    }
+    .iii:hover {
+        cursor: pointer;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+
+    .other {
+        display: none;
+        /* font-size: 16px;
+        width: 50%; */
+    }
+
+    .search-container input[type=text] {
+        width: 150px;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+
+    .hero-main {
+        padding-top: 80px;
+        height: 600px;
+    }
+
+    .hero-text {
+        padding-top: 300px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .butt-two {
+        font-size: 25px;
+        height: 50px;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .message {
+        font-size: 80px;
+    }
+
+    .sec-opt {
+        flex-direction: row;
+    }
+
+    .pic-onee, .pic-twoo {
+        height: 500px;
+    }
+
+    .text {
+        margin-top: 50%;
+    }
+
+    .butt-three {
+        font-size: 25px;
+        height: 40px;
+        width: 180px;
+    }
+
+    .gallery {
+        height: 500px;
+    }
+
+    .dukh {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .pic {
+        width: 30%;
+        height: 400px;
+        margin: 20px;
+    }
+
+    .pic h2 {
+        font-size: 18px;
+    }
+}
+
+/* Large screens (1600px and above) */
+@media only screen and (min-width: 1600px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 50px;
+        width: 15%;
+    }
+    .iii {
+        display: none;
+    }
+
+    .other {
+        font-size: 18px;
+        width: 40%;
+    }
+
+    .search-container input[type=text] {
+        width: 200px;
+    }
+
+    .icon {
+        font-size: 35px;
+    }
+
+    .hero-main {
+        padding-top: 100px;
+        height: 700px;
+    }
+
+    .hero-text {
+        padding-top: 400px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .butt-two {
+        font-size: 30px;
+        height: 60px;
+        width: 230px;
+        margin-top: 25px;
+    }
+
+    .message {
+        font-size: 100px;
+    }
+
+    .sec-opt {
+        flex-direction: row;
+    }
+
+    .pic-onee, .pic-twoo {
+        height: 900px;
+    }
+    .text {
+        margin-top: 60%;
+    }
+
+    .butt-three {
+        font-size: 30px;
+        height: 40px;
+        width: 250px;
+    }
+
+    .gallery {
+        height: 650px;
+    }
+
+    .dukh {
+        padding-top: 30px;
+        padding-left: 35px;
+    }
+
+    .pic {
+        width: 20%;
+        height: 600px;
+        margin: 15px;
+    }
+
+    .pic h2 {
+        font-size: 20px;
+    }
+    .container {
+        padding: none;
+    }
+}
+
+/* Screen sizes between 1000px and 1600px */
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+    .other {
+        display: none;
+    }
+
+    .iii {
+        font-size: 30px;
+    }
+    .iii:hover {
+        cursor: pointer;
+        font-size: larger;
+        font-weight: bolder;
+    }
+}
+
